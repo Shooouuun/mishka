@@ -1,0 +1,351 @@
+.page-header {
+  min-width: 320px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__navigation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    max-height: 88px;
+    padding: 0 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+}
+
+.page-header__navigation-top {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 79.5px;
+  padding: 20px 30px 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding: 22px 0 0;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: none;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.page-header__logotype {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  padding: 3px 2px 0 0;
+  transform: translate(-50%,-50%);
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    padding: 0;
+    transform: translate(0);
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.page-header__logotype-icon {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}
+
+.page-header__trigger {
+  position: relative;
+  background-color: inherit;
+  width: 22px;
+  height: 15px;
+  margin-top: 12px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  &--nojs {
+    display: none;
+  }
+
+  &--close {
+    > span {
+      background: transparent;
+  
+      &::before,
+      &::after {
+        transform: rotate3d(0, 0, 1, 45deg);
+        transition: 0.3s, transform 0.3s 0.3s;
+        top: 0;
+      }
+  
+      &::before {
+        transform: rotate3d(0, 0, 1, -45deg);
+      }
+    }
+  }
+}
+
+.page-header__trigger-name {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 0;
+  background: @tertiary-color;
+  width: 100%;
+  height: 2px;
+  transition: 0.3s;
+  font-size: 0;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: 0;
+    background: @tertiary-color;
+    width: 100%;
+    height: 2px;
+    transform-origin: 50% 50%;
+    transition: 0.3s 0.3s, transform 0.3s;
+  }
+
+  &::before {
+    top: 6px;
+  }
+
+  &::after {
+    top: -6px;
+  }
+}
+
+.page-header__navigation-bottom {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
+
+  &--nojs {
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+  }
+
+  &--open {
+    display: block;
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+  }
+}
+
+.page-header__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  &--js {
+    display: none;
+  }
+
+  &--main {
+    .page-header__link {
+      @media (min-width: @tablet-width) {
+        font-size: 15px;
+      }
+
+      @media (min-width: @desktop-width) {
+        line-height: 24px;
+        font-size: 17px;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      width: auto;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: auto;
+      order: -1;
+    }
+
+    .page-header__item {
+      @media (min-width: @desktop-width) {
+        margin-right: 34px;
+
+        &:first-child {
+          border-right: 1px solid #e6e6e6;
+        }
+      }
+    }
+  }
+
+  &--user {
+    @media (min-width: @tablet-width) {
+      flex-basis: 100%;
+      justify-content: flex-end;
+      order: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      flex-basis: auto;
+      width: auto;
+      order: 1;
+    }
+
+    .page-header__item {
+      @media (min-width: @tablet-width) {
+        min-width: 83px;
+        border: inherit;
+        padding: 30px 1px 34px 33px;
+        border-left: 1px solid @border-color;
+      }
+    }
+  }
+
+  &--extra {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: auto;
+      order: 2;
+      display: flex;
+    }
+
+    .page-header__item {
+      @media (min-width: @desktop-width) {
+        padding: 19px 60px 25px 2px;
+      }
+    }
+
+    .page-header__link {
+      @media (min-width: @desktop-width) {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.page-header__item {
+  border-top: 1px solid @border-color;
+  padding: 25px 30px 29px 75px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 83px;
+    border: inherit;
+    padding: 19px 36px 25px 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 30px 36px 25px 1px;
+  }
+}
+
+.page-header__link {
+  position: relative;
+  color: #000;
+  font-family: @font-bold;
+  line-height: 24px;
+  font-size: 17px;
+
+  &--cart {
+    @media (min-width: @tablet-width) {
+      padding-right: 1px;
+      padding-left: 51px;
+    }
+  }
+}
+
+.page-header__link-search {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__icon {
+  position: absolute;
+  top: 5px;
+  left: -43px;
+  fill: #d3d2d2;
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+  }
+
+  &--search {
+    @media (min-width: @tablet-width) {
+      position: relative;
+    }
+  }
+}
+
+.page-header__info {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-left: auto;
+    padding: 19px 2px 0 25px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: @font-standart;
+    color: #444;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    order: 3;
+  }
+}
