@@ -10,4 +10,4 @@ var toggle__nav = document.querySelector(".page-header__trigger"),
       e.preventDefault();
       nav.classList.toggle("page-header__navigation-bottom--open");
       toggle__nav.classList.toggle("page-header__trigger--close");
-  });
+    });
