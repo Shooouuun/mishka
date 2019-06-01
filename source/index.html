@@ -25,7 +25,7 @@
         </picture>
       </a>
       <!--page-header__trigger-nojs для переключателя без JS-->
-      <button class="page-header__trigger page-header__list--main page-header__trigger--nojs" type="button" title="Главная навигация">
+      <button class="page-header__trigger page-header__trigger--nojs" type="button" title="Главная навигация">
         <span class="page-header__trigger-name">Навигация</span>
       </button>
     </div>
@@ -62,6 +62,80 @@
     </div>
   </nav>
 </header>
+<main>
+  <section class="intro">
+    <h1 class="visually-hidden">Главная страница магазина</h1>
+    <div class="intro__top">
+      <h2 class="intro__title">Милые штуки ручной<br>работы для дома</h2>
+    </div>
+    <div class="intro__bottom">
+      <div class="intro__things">
+        <a class="intro__link">
+          <p class="intro__text">Предметы интерьера</p>
+          <svg class="intro__svg intro__svg--interior" width="40.22" height="62.41">
+            <use xlink:href="img/sprite.svg#icon-interior"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="intro__things">
+        <a class="intro__link">
+          <p class="intro__text">Детские игрушки</p>
+          <svg class="intro__svg intro__svg--toy" width="60" height="59.62">
+            <use xlink:href="img/sprite.svg#icon-toy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="product">
+    <h1 class="visually-hidden">Товары недели</h1>
+    <div class="product__inner">
+      <div class="product__top">
+        <h2 class="product__title">Вязаные корзинки</h2>
+        <p class="product__subtitle">Товар недели</p>
+      </div>
+      <div class="product__content">
+        <div class="product__discription">
+          <p class="product__paragraph">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+          <table class="product__table">
+            <tbody>
+              <tr class="product__row">
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr class="product__row">
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr class="product__row">
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="product__right">
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <source type="image/webp" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+          <img class="product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар недели">
+        </picture>
+      </div>
+
+      <div class="product__buy">
+        <p class="product__cost">
+          Цена:
+          <span class="product__price">990 руб.</span>
+        </p>
+        <a href="cart.html" class="product__btn btn">Заказать</a>
+      </div>
+    </div>
+  </section>
+</main>
 
 <script src="js/script.min.js"></script>
 <script src="js/picturefill.min.js"></script>
