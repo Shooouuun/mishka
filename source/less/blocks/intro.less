@@ -37,23 +37,23 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  width: 250px;
+  width: 260px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    width: 500px;
+    width: 530px;
   }
 }
 
 .intro__bottom {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
+    flex-flow: row wrap;
     padding: 0 50px;
 
     &::after {
@@ -73,9 +73,13 @@
 }
 
 .intro__things {
-  flex-basis: auto;
-  width: 100%;
+  flex: 1 1 auto;
+  flex-flow: column wrap;
   background-color: #63d1bb;
+
+  @media (min-width: @tablet-width) {
+    flex-flow: row wrap;
+  }
 
   &:last-child {
     background-color: #56c3b2;
