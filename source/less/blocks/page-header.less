@@ -246,8 +246,13 @@
       @media (min-width: @tablet-width) {
         min-width: 83px;
         border: inherit;
-        padding: 30px 1px 34px 33px;
+        padding: 30px 1px 34px 31px;
         border-left: 1px solid @border-color;
+      }
+
+      @media (min-width: @desktop-width) {
+        padding: 31px 2px 34px 31px;
+        letter-spacing: 0.1px;
       }
     }
   }
@@ -265,7 +270,7 @@
 
     .page-header__item {
       @media (min-width: @desktop-width) {
-        padding: 19px 60px 25px 2px;
+        padding: 18px 60px 25px 2px;
       }
     }
 
@@ -287,7 +292,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 30px 36px 25px 1px;
+    padding: 31px 36px 25px 1px;
   }
 }
 
@@ -298,10 +303,17 @@
   line-height: 24px;
   font-size: 17px;
 
+  &--search {
+    @media (min-width: @tablet-width) {
+      padding-left: 2px;
+    }
+  }
+
   &--cart {
     @media (min-width: @tablet-width) {
       padding-right: 1px;
-      padding-left: 51px;
+      padding-left: 52px;
+      padding-top: 1px;
     }
   }
 }
@@ -348,5 +360,6 @@
   @media (min-width: @desktop-width) {
     width: auto;
     order: 3;
+    padding: 18px 2px 0 25px;
   }
 }
