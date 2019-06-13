@@ -60,7 +60,7 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 54%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -76,8 +76,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 149px;
-    height: 72px;
+    width: 152px;
+    height: 73px;
   }
 }
 
@@ -246,7 +246,7 @@
       @media (min-width: @tablet-width) {
         min-width: 83px;
         border: inherit;
-        padding: 30px 1px 34px 31px;
+        padding: 31px 1px 34px 31px;
         border-left: 1px solid @border-color;
       }
 
@@ -270,7 +270,12 @@
 
     .page-header__item {
       @media (min-width: @desktop-width) {
-        padding: 18px 60px 25px 2px;
+        padding: 17px 60px 25px 2px;
+
+        &:first-child {
+          padding: 17px 56px 25px 2px;
+          letter-spacing: 0.2px;
+        }
       }
     }
 
@@ -288,7 +293,7 @@
 
   @media (min-width: @tablet-width) {
     border: inherit;
-    padding: 19px 36px 25px 1px;
+    padding: 17px 36px 25px 1px;
   }
 
   @media (min-width: @desktop-width) {
@@ -348,7 +353,7 @@
     display: inline-block;
     text-align: right;
     margin-left: auto;
-    padding: 19px 2px 0 25px;
+    padding: 17px 2px 0 25px;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
@@ -360,6 +365,6 @@
   @media (min-width: @desktop-width) {
     width: auto;
     order: 3;
-    padding: 18px 2px 0 25px;
+    padding: 17px 2px 0 25px;
   }
 }

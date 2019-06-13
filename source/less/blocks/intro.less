@@ -4,6 +4,28 @@
   display: flex;
   flex-direction: column;
   min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 26px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 33px bottom;
+      background-size: auto 23px;
+
+      @media (min-width: @desktop-width) {
+        height: 29px;
+        background-size: auto 37px;
+        background-position: -2px 0;
+      }
+    }
+  }
 }
 
 .intro__top {
@@ -20,19 +42,27 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 152px 0 373.5px;
+    padding: 153px 0 372.5px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0%;
-    background-size: 1150px 743px;
+    background-size: 1150px 744px;
 
     @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
       background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: 1150px 743px;
+      background-size: 1150px 744px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 152px 0 358px;
+    padding: 153px 0 359px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 50% 0%;
+    background-size: 1150px 745px;
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px 745px;
+    }
   }
 }
 
@@ -52,7 +82,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
-    line-height: 58px;
+    line-height: 57px;
     width: 641px;
   }
 }
@@ -65,26 +95,8 @@
   @media (min-width: @tablet-width) {
     flex-flow: row wrap;
     padding: 0 50px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 26px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-position: 33px bottom;
-      background-size: auto 23px;
-
-      @media (min-width: @desktop-width) {
-        height: 29px;
-        background-size: auto 37px;
-        background-position: 11px 0;
-      }
-    }
+    width: 1150px;
+    margin: 0 auto;
   }
 }
 
