@@ -30,6 +30,10 @@
       background-size: 1150px 743px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 152px 0 358px;
+  }
 }
 
 .intro__title {
@@ -44,6 +48,12 @@
     font-size: 43px;
     line-height: 50px;
     width: 530px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 58px;
+    width: 641px;
   }
 }
 
@@ -68,17 +78,24 @@
       background-repeat: repeat-x;
       background-position: 33px bottom;
       background-size: auto 23px;
+
+      @media (min-width: @desktop-width) {
+        height: 29px;
+        background-size: auto 37px;
+        background-position: 11px 0;
+      }
     }
   }
 }
 
 .intro__things {
-  flex: 1 1 auto;
+  flex: auto;
   flex-flow: column wrap;
   background-color: #63d1bb;
 
   @media (min-width: @tablet-width) {
     flex-flow: row wrap;
+    flex: 1 1 50%;
   }
 
   &:last-child {
