@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mishka | Главная</title>
-  <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/css/style.min.css" as="style">
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="keywords" content="test">
   <meta name="description" content="test">
@@ -134,8 +135,77 @@
       </div>
     </div>
   </section>
+  <section class="about-us">
+    <h1 class="about-us__title">Коротко о нас:</h1>
+    <ul class="about-us__list">
+      <li class="about-us__item">
+        <svg class="about-us__icon about-us__icon--flower" width="32" height="37">
+          <use xlink:href="img/sprite.svg#icon-feature-flower"></use>
+        </svg>
+        <p class="about-us__subtitle">Экологически<br>чистые материалы</p>
+      </li>
+      <li class="about-us__item">
+        <svg class="about-us__icon about-us__icon--money" width="47" height="27">
+          <use xlink:href="img/sprite.svg#icon-feature-money"></use>
+        </svg>
+        <p class="about-us__subtitle">Скандинавский стиль<br>по российской цене</p>
+      </li>
+      <li class="about-us__item">
+        <svg class="about-us__icon about-us__icon--heart" width="34" height="27">
+          <use xlink:href="img/sprite.svg#icon-feature-heart"></use>
+        </svg>
+        <p class="about-us__subtitle">Увеличивает лайки<br>на фотографиях</p>
+      </li>
+      <li class="about-us__item">
+        <svg class="about-us__icon about-us__icon--ball" width="35" height="34">
+          <use xlink:href="img/sprite.svg#icon-feature-ball"></use>
+        </svg>
+        <p class="about-us__subtitle about-us__subtitle--ball">Связано вручную с<br>любовью и умилением</p>
+      </li>
+      <li class="about-us__item">
+        <svg class="about-us__icon about-us__icon--rocket" width="55" height="23">
+          <use xlink:href="img/sprite.svg#icon-feature-rocket"></use>
+        </svg>
+        <p class="about-us__subtitle about-us__subtitle--rocket">Поддержка отечественного производителя</p>
+      </li>
+      <li class="about-us__item">
+        <svg class="about-us__icon about-us__icon--gift" width="33" height="32">
+          <use xlink:href="img/sprite.svg#icon-feature-gift"></use>
+        </svg>
+        <p class="about-us__subtitle about-us__subtitle--gift">Поставляется в<br>подарочной упаковке</p>
+      </li>
+    </ul>
+  </section>
+  <section class="reviews">
+    <div class="reviews__img-wrapper">
+      <div class="reviews__inner">
+        <h1 class="reviews__title">Отзывы</h1>
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
+            <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <span class="reviews__insta-name">@misssssiskras</span>
+          </blockquote>
+        </div>
+        <div class="reviews__button">
+          <button class="reviews__button">
+            <span class=visually-hidden>Предыдущий слайд</span>
+            <svg class="reviews__icon reviews__icon--arrow-left" aria-label="Предыдущий слайд" width="50" height="26">
+              <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
+            </svg>
+          </button>
+          <button class="reviews__button">
+            <span class=visually-hidden>Следующий слайд</span>
+            <svg class="reviews__icon reviews__icon--arrow-right" aria-label="Следующий слайд" width="50" height="26">
+              <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <a class="reviews__link">Написать</a>
+      </div>
+    </div>
+  </section>
 </main>
-
 <script src="js/script.min.js"></script>
 <script src="js/picturefill.min.js"></script>
 <script src="js/svgxuse.min.js"></script>
