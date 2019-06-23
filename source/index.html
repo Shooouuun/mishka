@@ -131,7 +131,7 @@
           Цена:
           <span class="product__price">990 руб.</span>
         </p>
-        <a href="cart.html" class="product__btn btn">Заказать</a>
+        <a href="cart.html" class="product__btn btn modal-js-button">Заказать</a>
       </div>
     </div>
   </section>
@@ -182,30 +182,129 @@
         <h1 class="reviews__title">Отзывы</h1>
         <div class="reviews__list">
           <blockquote class="reviews__item">
-            <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="reviews__author-name">Анастасия Красильникова</p>
             <span class="reviews__insta-name">@misssssiskras</span>
           </blockquote>
         </div>
-        <div class="reviews__button">
-          <button class="reviews__button">
+        <div class="reviews__button-wrap">
+          <button class="reviews__button reviews__button--arrow-left" aria-label="Кнопка влево">
             <span class=visually-hidden>Предыдущий слайд</span>
             <svg class="reviews__icon reviews__icon--arrow-left" aria-label="Предыдущий слайд" width="50" height="26">
               <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
             </svg>
           </button>
-          <button class="reviews__button">
+          <button class="reviews__button reviews__button--arrow-right" aria-label="Кнопка вправо">
             <span class=visually-hidden>Следующий слайд</span>
             <svg class="reviews__icon reviews__icon--arrow-right" aria-label="Следующий слайд" width="50" height="26">
               <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
             </svg>
           </button>
         </div>
-        <a class="reviews__link">Написать</a>
+        <a class="reviews__btn btn">Написать</a>
       </div>
     </div>
   </section>
+  <section class="contacts">
+    <div class="contacts__content-wrapper">
+      <h2 class="contacts__title">Контакты</h2>
+      <div class="contacts__main-info">
+        <address class="contacts__address-wrapper">
+          <div class="contacts__email-wrap">
+            <p class="contacts__email-name">e-mail:</p>
+            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">
+              <span class="contacts__email-text">info@mimimishkashop.ru</span>
+            </a>
+          </div>
+          <div class="contacts__address">
+            <p class="contacts__address-name">адрес:</p>
+            <a class="contacts__address-value" href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+101,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387058,30.3204919,16.77z/data=!4m5!3m4!1s0x4696310fca145cc1:0x62740c0ffcd8a91f!8m2!3d59.9387165!4d30.3230474?hl=ru-RU">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br>д. 19/8, офис 101</a>
+          </div>
+        </address>
+      </div>
+    </div>
+    <div class="contacts__map">
+      <iframe aria-label="Карта местонахождения берлоги Мишки" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3361.3918426248565!2d30.32018901307999!3d59.937193949122026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1466516317017" width="322" height="457" allowfullscreen=""></iframe>
+    </div>
+    <a class="contacts__btn btn" href="#">Напишите нам</a>
+  </section>
 </main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <ul class="page-footer__list">
+      <li class="page-footer__item">
+        <a class="page-footer__link">
+          <svg class="page-footer__logotype" width="102" height="34">
+            <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="page-footer__item social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="http://instagram.com">
+              <svg class="social__icon" width="22" height="21">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Инстаграмме</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="http://fb.com">
+              <svg class="social__icon" width="15" height="28">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Лицокниге</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="http://twitter.com">
+              <svg class="social__icon" width="23" height="20">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Твиттере</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__link page-footer__link--justify" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="page-footer__copyright">Разработано</p>
+          <svg class="page-footer__icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+<section class="modal-cart modal-cart__overlay">
+  <div class="modal-cart__wrapper">
+    <div class="modal-cart__inner">
+      <h1 class="modal-cart__title">Добавить в корзину</h1>
+      <p class="modal-cart__paragraph">Выберите размер:</p>
+      <form class="modal-cart__form" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="modal-cart__list">
+          <li class="modal-cart__checkbox checkbox">
+            <input class="visually-hidden checkbox__control" id="small-field" type="checkbox" name="small" value="small-size" checked="">
+            <label class="checkbox__label checkbox__label--size--m" for="small-field">s</label>
+          </li>
+          <li class="modal-cart__checkbox checkbox">
+            <input class="visually-hidden checkbox__control" id="medium-field" type="checkbox" name="medium" value="medium-size">
+            <label class="checkbox__label checkbox__label--size--m" for="medium-field">m</label>
+          </li>
+          <li class="modal-cart__checkbox checkbox">
+            <input class="visually-hidden checkbox__control" id="large-field" type="checkbox" name="large" value="large-size">
+            <label class="checkbox__label checkbox__label--size--m" for="large-field">l</label>
+          </li>
+        </ul>
+        <div class="modal-cart__button-wrapper">
+          <button class="button button--primary modal-cart__button" type="submit">Добавить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 <script src="js/script.min.js"></script>
 <script src="js/picturefill.min.js"></script>
 <script src="js/svgxuse.min.js"></script>

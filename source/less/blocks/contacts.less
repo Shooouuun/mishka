@@ -1,0 +1,126 @@
+.contacts {
+  min-width: 320px;
+  position: relative;
+  padding: 0 30px 39px;
+}
+
+.contacts__content-wrapper {
+  padding: 36px 0 37px;
+  margin: 0 -2px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: @font-bold;
+  padding-bottom: 26px;
+}
+
+.contacts__email-wrap {
+  display: flex;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: @font-standart;
+  font-style: normal;
+  letter-spacing: -0.1px;
+  color: #444444;
+  padding: 0 6px 30px 0;
+}
+
+.contacts__email-name {
+  letter-spacing: 0.2px;
+  width: 30.5%;
+}
+
+.contacts__email {
+  width: 69.5%;
+  color: #444444;
+}
+
+.contacts__email-text {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #63d1bb;
+  }
+}
+
+.contacts__address {
+  display: flex;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: @font-standart;
+  font-style: normal;
+  color: #444444;
+  letter-spacing: 0.3px;
+}
+
+.contacts__address-name {
+  width: 30%;
+}
+
+.contacts__address-value {
+  width: 70%;
+  color: #444444;
+  letter-spacing: -0.1px;
+}
+
+.contacts__map {
+  height: 456px;
+  border: 0;
+  margin: 0 -28px 40px;
+  background: @palette-tertiary url("../img/map-mobile@1x.webp") no-repeat 50% 100%;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/map-mobile@2x.webp");
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 395px;
+    background-image: url("../img/map-tablet@1x.webp");
+    background-size: 768px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-tablet@2x.webp");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+    background-image: url("../img/map-desktop@1x.webp");
+    background-size: 1300px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-desktop@2x.webp");
+    }
+  }
+}
+
+.contacts__btn {
+  display: block;
+  width: 100%;
+  padding: 15px 10px 17px 10px;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: @font-bold;
+  text-align: center;
+  color: #444444;
+  text-transform: @text-transform-base;
+  font-style: normal;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #444444;
+  cursor: pointer;
+}

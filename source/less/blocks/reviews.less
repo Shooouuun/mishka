@@ -1,3 +1,93 @@
 .reviews {
   position: relative;
+  min-width: 320px;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 7px;
+    bottom: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 319px 100%;
+    transform: rotate(180deg);
+  }
+}
+
+.reviews__inner {
+  padding: 0 30px 43px;
+}
+
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: @font-bold;
+  padding-bottom: 24px;
+  margin-left: -2px;
+  letter-spacing: 0.2px;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+  font-family: @font-standart;
+  padding-bottom: 26px;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-family: @font-bold;
+  font-style: normal;
+  padding-bottom: 6px;
+  letter-spacing: 0.1px;
+}
+
+.reviews__insta-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-family: @font-standart;
+  font-style: normal;
+  color: #444444;
+}
+
+.reviews__button-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 34px 0 39px;
+}
+
+.reviews__button {
+  padding: 12px 37px 8px 40px;
+  outline: 1px solid #ececec;
+}
+
+.reviews__icon {
+  &--arrow-left {
+    margin-right: 2px;
+  }
+
+  &--arrow-right {
+    margin-right: 3px;
+  }
+}
+
+.reviews__btn {
+  display: block;
+  width: 100%;
+  padding: 15px 10px 17px 10px;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: @font-bold;
+  text-align: center;
+  color: #444444;
+  text-transform: @text-transform-base;
+  font-style: normal;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #444444;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 99.4%;
+  }
 }
