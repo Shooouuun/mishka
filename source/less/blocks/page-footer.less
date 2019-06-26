@@ -1,0 +1,88 @@
+.page-footer {
+  position: relative;
+  min-width: 320px;
+  background-color: #f1f1f1;
+  padding: 24px 0 24px;
+
+  @media (min-width: @tablet-width) {
+    padding: 52px 0 54px;
+  }
+}
+
+.page-footer__wrapper {
+  padding: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+  }
+}
+
+.page-footer__list {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    align-items: center;
+    align-content: initial;
+    flex-flow: row wrap;
+  }
+}
+
+.page-footer__item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    justify-content: initial;
+    width: initial;
+  }
+
+  &:first-child {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      padding-bottom: 4px;
+    }
+  }
+
+  &:last-child {
+    padding-top: 21px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 4px;
+      width: 184px;
+    }
+  }
+}
+
+.page-footer__link {
+  display: flex;
+
+  &--justify {
+    width: 185px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2px;
+
+    @media (min-width: @tablet-width) {
+      width: 185px;
+      padding-right: 0;
+    }
+  }
+}
+
+.page-footer__copyright {
+  font-size: 19px;
+  line-height: 19px;
+  font-family: @font-bold;
+  color: #000000;
+  padding-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+}
