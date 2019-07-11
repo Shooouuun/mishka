@@ -2,6 +2,10 @@
   position: relative;
   min-width: 320px;
 
+  @media (min-width: @desktop-width) {
+    padding-bottom: 30px;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -24,9 +28,10 @@
     }
 
     @media (min-width: @desktop-width) {
-      height: 17px;
-      background-position: 0 bottom;
-      background-size: auto 15px;
+      height: 22px;
+      background-position: -3px bottom;
+      background-size: auto 21px;
+      bottom: 0;
     }
   }
 }
@@ -41,6 +46,12 @@
     flex-flow: row wrap;
     padding: 34px 46.5px 52px;
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 111px 46px 66px 66px;
+  }
 }
 
 .product__top {
@@ -51,6 +62,13 @@
     justify-content: space-between;
     padding-bottom: 44px;
     width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 43px;
   }
 }
 
@@ -63,6 +81,13 @@
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 23px;
+    letter-spacing: -0.1px;
   }
 }
 
@@ -80,6 +105,10 @@
     width: 132px;
     text-align: center;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 4px;
+  }
 }
 
 .product__discription {
@@ -88,6 +117,11 @@
   @media (min-width: @tablet-width) {
     flex: 1 1 50%;
     padding: 0 50px 0 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 1 1 48%;
+    padding: 2px 40px 160px 160px;
   }
 }
 
@@ -103,6 +137,10 @@
     line-height: 30px;
     padding-bottom: 36px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 47px;
+  }
 }
 
 .product__table {
@@ -114,6 +152,10 @@
   font-family: @font-standart;
   color: #444444;
   font-style: normal;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .product__row {
@@ -134,6 +176,10 @@
     @media (min-width: @tablet-width) {
       min-width: 34%;
     }
+
+    @media (min-width: @desktop-width) {
+      min-width: 33%;
+    }
   }
 }
 
@@ -143,6 +189,13 @@
   @media (min-width: @tablet-width) {
     flex: 1 1 50%;
     padding: 9px 5px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 1 1 52%;
+    margin-top: -167px;
+    padding: 11px 4px 0 10px;
+    z-index: -1;
   }
 }
 
@@ -162,6 +215,12 @@
     left: -2px;
     width: 50%;
     padding: 0 40px 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 54px;
+    width: 50%;
+    padding: 0 54px 14px 227px;
   }
 }
 
