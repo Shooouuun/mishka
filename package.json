@@ -5,11 +5,11 @@
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "latest",
-    "autoprefixer": "^9.7.2",
+    "autoprefixer": "latest",
     "browser-sync": "latest",
     "gulp": "latest",
-    "gulp-csso": "^4.0.1",
-    "gulp-imagemin": "^6.2.0",
+    "gulp-csso": "latest",
+    "gulp-imagemin": "latest",
     "gulp-less": "latest",
     "gulp-plumber": "latest",
     "gulp-postcss": "latest",
@@ -19,8 +19,8 @@
     "gulp-svgstore": "latest",
     "gulp-uglify": "latest",
     "gulp-webp": "latest",
-    "posthtml-include": "^1.3.2",
-    "stylelint": "^12.0.0",
+    "posthtml-include": "latest",
+    "stylelint": "latest",
     "stylelint-config-htmlacademy": "latest"
   },
   "scripts": {
