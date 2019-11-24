@@ -30,11 +30,19 @@
   &--open {
     top: 50%;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 566px;
+  }
 }
 
 .modal-cart__inner {
   padding: 33px 30px 20px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 33px 106px 20px;
+  }
 }
 
 .modal-cart__title {
@@ -44,6 +52,12 @@
   text-transform: uppercase;
   width: 60%;
   margin: 0 auto 12px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    width: inherit;
+  }
 }
 
 .modal-cart__paragraph {
@@ -53,6 +67,10 @@
   color: #444444;
   width: 60%;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .modal-cart__list {
@@ -63,6 +81,10 @@
 
 .modal-cart__checkbox {
   width: 82px;
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+  }
 }
 
 .checkbox__label {
